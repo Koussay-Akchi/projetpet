@@ -1,4 +1,5 @@
 # projetpet
-Projet 2023
+## mini-Projet web 2023 :
+plateforme pour faciliter la relation entre veterinaires et clients
 <br>
-https://trello.com/b/QfShDaWY/adoption-survey
+[Project Board](https://trello.com/b/r48GMpJm/projet-veto)
