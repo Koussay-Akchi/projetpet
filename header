@@ -1,0 +1,12 @@
+<div class="header">
+        <a href="index.html" class="logo"><img src="images/icons/logo.png" height="100px" width="100px"></a>
+        <br><br>
+        
+        <div class="header-right">
+            
+          <a href="index.html">Accueil</a>
+          <a href="login.html">S'authentifier</a>
+          <a href="contact.html">Contact</a>
+          <a href="produits.html">Magasin</a>
+        </div>
+      </div>
