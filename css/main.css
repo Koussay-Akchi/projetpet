@@ -19,8 +19,6 @@ body{
     width: 100%;
   }
 
-
-
   .header {
     overflow: hidden;
     border-radius: 25px;
@@ -140,3 +138,15 @@ body{
     background-color: #666;
     border-radius: 0px 0px 4px 4px;
   }
+
+  footer {
+    background-color: #51afc3;
+    color : white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+  }
+  
