@@ -4,6 +4,7 @@ body{
   background-image: url('../images/bg.jpeg');
   background-repeat: no-repeat;
   background-size: cover;
+  position: relative
 }
 
   * {
@@ -70,9 +71,9 @@ body{
 } 
 
 .container {
-    position: relative;
     border-radius: 5px;
     padding: 20px 0 30px 0;
+    padding-bottom: 2.5rem;
   } 
   
   input,.btn {
@@ -143,10 +144,8 @@ body{
     background-color: #51afc3;
     color : white;
     text-align: center;
-    padding: 5px;
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
+    bottom: 0%;
+    width: 100%; 
+    position: absolute;
   }
   
