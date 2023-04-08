@@ -1,49 +1,21 @@
-<div class="box" text>
-    <h2>
-      design de formulaire incompatible avec bootstrap.css<br>à trouver solution ou remplacer
-
-    </h2>
-</div>
-<br>
-<div class="container">
-
-  <form action="/action_page.php">
-    <div class="row">
-      
-      
-      <div class="vl">
-        <span class="vl-innertext">ou</span>
-      </div>
-
-      <div class="col">
-        <h2 style="text-align:center">Login Utilisateur</h2>
+  <div class="box">
+    <br><br><br><br>
+    <a routerLink="/loginu">
+      <div class="left-button">
         <img src="../../assets/images/icons/user.png" class="avatar">
-        <input type="text" name="username" placeholder="Nom d'utilisateur" required>
-        <input type="password" name="password" placeholder="Mot de passe" required>
-        <input type="submit" value="Login">
+        <div>Se connecter en tant qu'utilisateur</div>
       </div>
-    
+      </a>
 
-
-    <form action="/action_page.php">
-      <div class="col">
-        <h2 style="text-align:center">Login Veterinaire</h2>
-        <img src="../../assets/images/icons/veto.png" class="avatar">
-        <input type="text" name="username" placeholder="Nom d'utilisateur" required>
-        <input type="password" name="password   " placeholder="Mot de passe" required>
-        <input type="submit" value="Login">
+      <div>
+        <span>ou</span>
       </div>
+
+      <a routerLink="/loginv">
+        <div class="right-button">
+          <img src="../../assets/images/icons/veto.png" class="avatar">
+          <div>Se connecter en tant que Veterinaire</div>
+        </div>
+        </a>
       
-  </form>
-</div>
-
-<div class="bottom-container">
-  <div class="row">
-    <div class="col">
-      <a routerLink="/inscriptionu" style="color:white" class="btn">Creer compte utilisateur</a>
-    </div>
-    <div class="col">
-      <a routerLink="/inscriptionv" style="color:white" class="btn">Creer compte veterinaire</a>
-    </div>
   </div>
-</div>

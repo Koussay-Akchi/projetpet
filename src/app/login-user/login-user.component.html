@@ -1,0 +1,22 @@
+<div class="box">
+    <h1>Login Utilisateur : </h1>
+    <img src="../../assets/images/icons/user.png" class="avatar">
+    <form #loginForm="ngForm" (ngSubmit)="submit(loginForm)" novalidate>
+      <div>
+        <input class="form-control" type="email" id="email" name="email" placeholder="E-mail" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" ngModel>
+        <div *ngIf="loginForm.submitted && loginForm.controls['email'].invalid" class="error-message">Email incorrect</div>
+      </div>
+      <div>
+        <input class="form-control" type="password" id="password" name="password" placeholder="Mot de passe" required ngModel>
+        <div *ngIf="loginForm.submitted && loginForm.controls['password'].invalid" class="error-message">Mot de passe incorrect</div>
+      </div>
+      <br>
+      <button class="btn btn-primary" type="submit">Se connecter</button>
+      <div>
+        <span>Pas de compte?</span> &nbsp;
+        <a routerLink="/inscriptionu"><button class="btn btn-primary" type="submit">Inscriver vous</button></a>
+      </div>
+    </form>
+  </div>
+<br><br><br><br><br><br><br><br><br><br>
+  
