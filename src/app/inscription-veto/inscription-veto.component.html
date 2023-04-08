@@ -1,35 +1,72 @@
 <div class="box">
-  <img src="../../assets/images/icons/veto.png" class="avatar">
-  <form>
-  <div>
-    <label for="name">Prenom :</label>
-    <input type="text" id="name" name="name" required>
-  </div>
-  <div>
-    <label for="last_name">Nom :</label>
-    <input type="text" id="last_name" name="last_name" required>
-  </div>
-  <div>
-    <label for="email">Email :</label>
-    <input type="email" id="email" name="email" required>
-  </div>
-  <div>
-    <label for="adress">Adresse :</label>
-    <input type="email" id="email" name="email" required>
-  </div>
-  <div>
-    <label for="password">Mot de passe :</label>
-    <input type="password" id="password" name="password" required>
-  </div>
-  <div>
-    <label for="telephone">Telephone :</label>
-    <input type="tel" id="telephone" name="telephone" required pattern="[0-9  ]{10}">
-  </div>
-  <div>
-    <label for="sex">Sexe : (M/F)</label>
-    <label><input type="radio" name="sex" value="male"> </label>
-    <label><input type="radio" name="sex" value="female"> </label>
-  </div>
-  <button type="submit">S'inscrire</button>
-</form>
+  <h1>Inscription Utilisateur : </h1>
+  <img src="../../assets/images/icons/user.png" class="avatar">
+  <form #loginForm="ngForm" (ngSubmit)="submit(loginForm)" novalidate>
+    <div>
+      <label for="name">Prenom :</label>
+      <input class="form-control" type="text" id="name" name="name" required ngModel>
+      <div *ngIf="loginForm.submitted && loginForm.controls['name'].invalid" class="error-message">Prenom incorrect</div>
+    </div>
+    <div>
+      <label for="last_name">Nom :</label>
+      <input class="form-control" type="text" id="last_name" name="last_name" required  ngModel>
+      <div *ngIf="loginForm.submitted && loginForm.controls['last_name'].invalid" class="error-message">Nom incorrect</div>
+    </div>
+    <div>
+      <label for="gouvernorat">gouvernorat:</label>
+      <select class="form-control" id="gouvernorat" name="gouvernorat" required ngModel>
+          <option value="ariana">Ariana</option>
+          <option value="beja">Béja</option>
+          <option value="ben arous">Ben Arous</option>
+          <option value="bizerte">Bizerte</option>
+          <option value="gabes">Gabès</option>
+          <option value="gafsa">Gafsa</option>
+          <option value="jendouba">Jendouba</option>
+          <option value="kairouan">Kairouan</option>
+          <option value="kasserine">Kasserine</option>
+          <option value="kebili">Kébili</option>
+          <option value="kef">Le Kef</option>
+          <option value="mahdia">Mahdia</option>
+          <option value="manouba">Manouba</option>
+          <option value="medenine">Médenine</option>
+          <option value="monastir">Monastir</option>
+          <option value="nabeul">Nabeul</option>
+          <option value="sfax">Sfax</option>
+          <option value="sidi bouzid">Sidi Bouzid</option>
+          <option value="siliana">Siliana</option>
+          <option value="sousse">Sousse</option>
+          <option value="tataouine">Tataouine</option>
+          <option value="tozeur">Tozeur</option>
+          <option value="tunis">Tunis</option>
+          <option value="zaghouan">Zaghouan</option>
+      </select>
+      <div *ngIf="loginForm.submitted && loginForm.controls['gouvernorat'].invalid" class="error-message">Selectionnez un gouvernorat</div>
+      </div>
+      
+      <div>
+      <label for="email">Email :</label>
+      <input class="form-control" type="email" id="email" name="email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" ngModel>
+      <div *ngIf="loginForm.submitted && loginForm.controls['email'].invalid" class="error-message">Email incorrect</div>
+    </div>
+    <div>
+      <label for="password">Mot de passe :</label>
+      <input class="form-control" type="password" id="password" name="password" required ngModel>
+      <div *ngIf="loginForm.submitted && loginForm.controls['password'].invalid" class="error-message">Mot de passe incorrect</div>
+    </div>
+    <div>
+      <label for="telephone">Telephone:</label>
+      <input class="form-control" type="tel" id="telephone" name="telephone" required pattern="\d{8}" ngModel>
+      <div *ngIf="loginForm.submitted && loginForm.controls['telephone'].invalid" class="error-message">Telephone incorrect</div>
+    </div>
+    <div>
+      <label for="sex">Sexe :</label>
+      <select class="form-control" id="sex" name="sex" required ngModel>
+        <option value="male" selected>Homme</option>
+        <option value="female">Femme</option>
+      </select>
+      <div *ngIf="loginForm.submitted && loginForm.controls['sex'].invalid" class="error-message">sexe incorrect</div>
+    </div>
+    <br>
+    <button class="btn btn-primary" type="submit">S'inscrire</button>
+  </form>
 </div>
