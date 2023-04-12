@@ -1,0 +1,94 @@
+{
+  "animals": [
+    {
+      "id": 1,
+      "name": "Fluffy",
+      "age": 3,
+      "sex": "Female",
+      "type": "Dog",
+      "weight": 12.5,
+      "fur_length": "Long"
+    },
+    {
+      "id": 2,
+      "name": "Whiskers",
+      "age": 2,
+      "sex": "Male",
+      "type": "Cat",
+      "weight": 5.2,
+      "fur_length": "Short"
+    },
+    {
+      "id": 3,
+      "name": "Bubbles",
+      "age": 1,
+      "sex": "Female",
+      "type": "Cat",
+      "weight": 3.6,
+      "fur_length": "Medium"
+    },
+    {
+      "id": 4,
+      "name": "Rocky",
+      "age": 5,
+      "sex": "Male",
+      "type": "Dog",
+      "weight": 20.1,
+      "fur_length": "Short"
+    },
+    {
+      "id": 5,
+      "name": "Max",
+      "age": 2,
+      "sex": "Male",
+      "type": "Dog",
+      "weight": 10.3,
+      "fur_length": "Medium"
+    },
+    {
+      "id": 6,
+      "name": "Mittens",
+      "age": 4,
+      "sex": "Female",
+      "type": "Cat",
+      "weight": 4.7,
+      "fur_length": "Long"
+    },
+    {
+      "id": 7,
+      "name": "Nemo",
+      "age": 1,
+      "sex": "Male",
+      "type": "Cat",
+      "weight": 2.8,
+      "fur_length": "Short"
+    },
+    {
+      "id": 8,
+      "name": "Nibbles",
+      "age": 3,
+      "sex": "Female",
+      "type": "Dog",
+      "weight": 15.6,
+      "fur_length": "Long"
+    },
+    {
+      "id": 9,
+      "name": "Charlie",
+      "age": 6,
+      "sex": "Male",
+      "type": "Dog",
+      "weight": 18.7,
+      "fur_length": "Medium"
+    },
+    {
+      "id": 10,
+      "name": "Cleo",
+      "age": 3,
+      "sex": "Female",
+      "type": "Cat",
+      "weight": 4.1,
+      "fur_length": "Short"
+    }
+  ]
+  }

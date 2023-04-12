@@ -15,6 +15,11 @@ import { InscriptionUserComponent } from './inscription-user/inscription-user.co
 import { InscriptionVetoComponent } from './inscription-veto/inscription-veto.component';
 import { LoginVetoComponent } from './login-veto/login-veto.component';
 import { LoginUserComponent } from './login-user/login-user.component';
+import { ProfilUserComponent } from './profil-user/profil-user.component';
+import { AjouterAnimalComponent } from './ajouter-animal/ajouter-animal.component';
+import { CardAnimalComponent } from './card-animal/card-animal.component';
+import { ProfilVetoComponent } from './profil-veto/profil-veto.component';
+import { RdvComponent } from './rdv/rdv.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +33,12 @@ import { LoginUserComponent } from './login-user/login-user.component';
     InscriptionUserComponent,
     InscriptionVetoComponent,
     LoginVetoComponent,
-    LoginUserComponent
+    LoginUserComponent,
+    ProfilUserComponent,
+    AjouterAnimalComponent,
+    CardAnimalComponent,
+    ProfilVetoComponent,
+    RdvComponent
   ],
   imports: [
     BrowserModule,

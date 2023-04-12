@@ -8,6 +8,11 @@ import { InscriptionUserComponent } from './inscription-user/inscription-user.co
 import { InscriptionVetoComponent } from './inscription-veto/inscription-veto.component';
 import { LoginVetoComponent } from './login-veto/login-veto.component';
 import { LoginUserComponent } from './login-user/login-user.component';
+import { ProfilUserComponent } from './profil-user/profil-user.component';
+import { AjouterAnimalComponent } from './ajouter-animal/ajouter-animal.component';
+import { ProfilVetoComponent } from './profil-veto/profil-veto.component';
+import { RdvComponent } from './rdv/rdv.component';
+
 const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'login', component: LoginComponent },
@@ -16,6 +21,10 @@ const routes: Routes = [
   { path: 'inscriptionv', component: InscriptionVetoComponent },
   { path: 'loginv', component: LoginVetoComponent },
   { path: 'loginu', component: LoginUserComponent },
+  { path: 'profil', component: ProfilUserComponent },
+  { path: 'cabinet', component: ProfilVetoComponent },
+  { path: 'ajout_animal', component: AjouterAnimalComponent },
+  { path: 'mes_rdv', component: RdvComponent },
   { path: 'magasin', component: MagasinComponent }
 ];
 

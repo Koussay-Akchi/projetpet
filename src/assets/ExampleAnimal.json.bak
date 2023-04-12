@@ -1,0 +1,109 @@
+{
+  "animals": [
+    {
+      "id": 1,
+      "name": "Fluffy",
+      "age": 3,
+      "sex": "Female",
+      "type": "Dog"
+    },
+    {
+      "id": 2,
+      "name": "Whiskers",
+      "age": 2,
+      "sex": "Male",
+      "type": "Cat"
+    },
+    {
+      "id": 3,
+      "name": "Bubbles",
+      "age": 1,
+      "sex": "Female",
+      "type": "Cat"
+    },
+    {
+      "id": 4,
+      "name": "Rocky",
+      "age": 5,
+      "sex": "Male",
+      "type": "Dog"
+    },
+    {
+      "id": 5,
+      "name": "Max",
+      "age": 2,
+      "sex": "Male",
+      "type": "Dog"
+    },
+    {
+      "id": 6,
+      "name": "Mittens",
+      "age": 4,
+      "sex": "Female",
+      "type": "Cat"
+    },
+    {
+      "id": 7,
+      "name": "Nemo",
+      "age": 1,
+      "sex": "Male",
+      "type": "Cat"
+    },
+    {
+      "id": 8,
+      "name": "Nibbles",
+      "age": 3,
+      "sex": "Female",
+      "type": "Dog"
+    },
+    {
+      "id": 9,
+      "name": "Charlie",
+      "age": 6,
+      "sex": "Male",
+      "type": "Dog"
+    },
+    {
+      "id": 10,
+      "name": "Cleo",
+      "age": 3,
+      "sex": "Female",
+      "type": "Cat"
+    },
+    {
+      "id": 11,
+      "name": "Goldie",
+      "age": 2,
+      "sex": "Female",
+      "type": "Cat"
+    },
+    {
+      "id": 12,
+      "name": "Snickers",
+      "age": 2,
+      "sex": "Male",
+      "type": "Dog"
+    },
+    {
+      "id": 13,
+      "name": "Oscar",
+      "age": 4,
+      "sex": "Male",
+      "type": "Dog"
+    },
+    {
+      "id": 14,
+      "name": "Luna",
+      "age": 1,
+      "sex": "Female",
+      "type": "Cat"
+    },
+    {
+      "id": 15,
+      "name": "Blue",
+      "age": 2,
+      "sex": "Male",
+      "type": "Cat"
+    }
+  ]
+  }
