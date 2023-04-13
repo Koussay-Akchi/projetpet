@@ -1,0 +1,23 @@
+.card{   
+    width: 400px;
+    margin-left: 8px;
+    margin-bottom: 8px;
+    background-color: burlywood;
+}
+
+.card-text{
+    display:inline-block;
+    font-weight: bold;
+  }
+
+  .nom-animal{
+    color:cadetblue;
+  }
+
+  .nom-veto{
+    color: green;
+  }
+
+  h5{
+    font-weight: bold;
+  }

@@ -1,3 +1,14 @@
-<div class="box">
-<p>rdv ici</p>
-</div>
+<div class="mes-r d-flex flex-wrap">
+    <div class="card" *ngFor="let r of rdv">
+      <img src="../../assets/images/cabinet.jpg" height="100px">
+      <div class="card-body">
+        <h5 class="card-title">Le {{ r.date }}</h5>
+        <p class="card-text nom-animal">{{ r.animalName }}</p>
+        &nbsp;
+        <p class="card-text">chez</p>
+        &nbsp;
+        <p class="card-text nom-veto">{{ r.vetoName }}</p>
+      </div>
+    </div>
+  </div>
+  

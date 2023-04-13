@@ -1,0 +1,30 @@
+{
+    "rdv": [
+      {
+        "date": "2023-04-15",
+        "animalName": "Mimi",
+        "vetoName": "Dr.Ben Amor"
+      },
+      {
+        "date": "2023-04-17",
+        "animalName": "Kitty",
+        "vetoName": "Dr.Bouazizi"
+      },
+      {
+        "date": "2023-04-20",
+        "animalName": "Lucky",
+        "vetoName": "Dr.Ben Othman"
+      },
+      {
+        "date": "2023-04-22",
+        "animalName": "Fluffy",
+        "vetoName": "Dr.Khadhraoui"
+      },
+      {
+        "date": "2023-04-25",
+        "animalName": "Buddy",
+        "vetoName": "Dr.Mabrouk"
+      }
+    ]
+  }
+  
