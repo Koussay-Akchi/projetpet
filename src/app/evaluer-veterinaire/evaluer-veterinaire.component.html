@@ -1,0 +1,54 @@
+    <div class="profile-container">
+        <div class="profile-card">
+        <div class="wrapper">
+        <div class="left">
+            <img src="../../assets/images/veto.jpg" alt="user" width="100">
+            <h4>Dr. Foulen</h4>
+             <p>Jendouba</p>
+        </div>
+        <div class="right">
+            <div class="info">
+                <h3>Information</h3>
+                <div class="info_data">
+                     <div class="data">
+                        <h4>Email</h4>
+                        <p>foulen_fouleni@gmail.com</p>
+                     </div>
+                </div>
+                <div class="info_data">
+                  <div class="data">
+                    <h4>Telephone</h4>
+                     <p>98 145 912</p>
+               </div>
+             </div>
+            </div>
+            <div class="score d-flex flex-wrap">
+                <div *ngFor="let item of [0,1,2,3];">
+                    <img src="../../assets/images/star.png" height="50px" width="50px">
+                </div>
+            </div>
+            
+    
+        </div>
+    </div>
+    </div>
+
+
+<div class="box">
+  <form #loginForm="ngForm" (ngSubmit)="submit(loginForm)" novalidate>
+    <div>
+      <label for="score">Score :</label>
+      <select class="form-control" id="score" name="score" ngModel>
+        <option value=1>1 etoile</option>
+        <option value=2>2 etoiles</option>
+        <option value=3>3 etoiles</option>
+        <option value=4>4 etoiles</option>
+        <option value=5>5 etoiles</option>
+      </select>
+    </div>
+    <br>
+    <button class="btn btn-primary" type="submit">Modifer</button>
+  </form>
+</div>
+</div>
+<br><br><br><br><br><br><br><br>

@@ -1,0 +1,59 @@
+<div class="profile-container">
+    <div class="profile-card">
+    <div class="wrapper">
+    <div class="left">
+        <img src="../../assets/images/dog.jpg" alt="user" width="100">
+        <h4>Rex</h4>
+        <a routerLink="/profil"><button class="btn btn-primary">Foulen</button></a>
+    </div>
+    <div class="right">
+      <a routerLink="/mes_rdv"><button class="btn btn-primary btn-danger">Supprimer profil</button></a>
+
+    </div>
+</div>
+</div>
+<div class="box">
+    <h1>Modifier : </h1>
+    <img src="../../assets/images/icons/pet.png" class="avatar">
+    <form #loginForm="ngForm" (ngSubmit)="submit(loginForm)" novalidate>
+      <div>
+        <label for="name">nom :</label>
+        <input class="form-control" placeholder="Rex" type="text" id="name" name="name" required ngModel>
+      </div>    
+        <div>
+        <label for="age">Age :</label>
+        <input class="form-control" placeholder="2 ans" type="number" id="age" name="age" min="1" max="25" required ngModel>
+      </div>
+      <div>
+        <label for="weight">Poids :</label>
+        <input class="form-control" placeholder="4.3" type="number" id="weight" name="weight" required step="0.01" ngModel>
+      </div>
+      <div>
+        <label for="fur_length">Longueur de fourrure :</label>
+        <select class="form-control" id="fur_length" name="fur_length" required ngModel>
+          <option value="Short" selected>Courts</option>
+          <option value="Medium">Moyens</option>
+          <option value="Long">Longs</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="type_a">Type :</label>
+        <select class="form-control" id="type_a" name="type_a" required ngModel>
+          <option value="Cat" selected>Chat</option>
+          <option value="Dog">Chien</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="sex">Sexe :</label>
+        <select class="form-control" id="sex" name="sex" required ngModel>
+          <option value="male" selected>Male</option>
+          <option value="female">Femelle</option>
+        </select>
+      </div>
+      <br>
+      <button class="btn btn-primary" type="submit">Modifer</button>
+    </form>
+  </div>
+</div>

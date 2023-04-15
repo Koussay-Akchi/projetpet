@@ -20,6 +20,18 @@ import { AjouterAnimalComponent } from './ajouter-animal/ajouter-animal.componen
 import { CardAnimalComponent } from './card-animal/card-animal.component';
 import { ProfilVetoComponent } from './profil-veto/profil-veto.component';
 import { RdvComponent } from './rdv/rdv.component';
+import { RechercheComponent } from './recherche/recherche.component';
+import { ProfilAnimalComponent } from './profil-animal/profil-animal.component';
+import { CarnetAnimalComponent } from './carnet-animal/carnet-animal.component';
+import { ConsulterVeterinaireComponent } from './consulter-veterinaire/consulter-veterinaire.component';
+import { EvaluerVeterinaireComponent } from './evaluer-veterinaire/evaluer-veterinaire.component';
+import { AjouterRdvComponent } from './ajouter-rdv/ajouter-rdv.component';
+import { environment } from './../environments/environment';
+import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
+import { environment } from '../environments/environment';
+import { provideAuth,getAuth } from '@angular/fire/auth';
+import { provideDatabase,getDatabase } from '@angular/fire/database';
+import { provideFirestore,getFirestore } from '@angular/fire/firestore';
 
 @NgModule({
   declarations: [
@@ -38,7 +50,13 @@ import { RdvComponent } from './rdv/rdv.component';
     AjouterAnimalComponent,
     CardAnimalComponent,
     ProfilVetoComponent,
-    RdvComponent
+    RdvComponent,
+    RechercheComponent,
+    ProfilAnimalComponent,
+    CarnetAnimalComponent,
+    ConsulterVeterinaireComponent,
+    EvaluerVeterinaireComponent,
+    AjouterRdvComponent
   ],
   imports: [
     BrowserModule,
@@ -49,7 +67,11 @@ import { RdvComponent } from './rdv/rdv.component';
       // Register the ServiceWorker as soon as the application is stable
       // or after 30 seconds (whichever comes first).
       registrationStrategy: 'registerWhenStable:30000'
-    })
+    }),
+    provideFirebaseApp(() => initializeApp(environment.firebase)),
+    provideAuth(() => getAuth()),
+    provideDatabase(() => getDatabase()),
+    provideFirestore(() => getFirestore())
   ],
   providers: [],
   bootstrap: [AppComponent]

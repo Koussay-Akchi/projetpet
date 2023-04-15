@@ -9,6 +9,15 @@ import * as data from '../../assets/ExampleRdv.json';
 export class RdvComponent {
   rdv : any;
   rendez_vous:any;
+  m_date = false;
+  modifier_date(){
+    this.m_date=true;
+  }
+
+  confirmer(){
+    this.m_date=false;
+  }
+
 
   ngOnInit() {
     this.rendez_vous = data;

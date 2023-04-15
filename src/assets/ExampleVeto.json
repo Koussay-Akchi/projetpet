@@ -1,0 +1,34 @@
+{
+  "veto": [
+    {
+      "id": 1,
+      "name": "Ahmed",
+      "last_name": "Trabelsi",
+      "gouvernorate": "Ariana"
+    },
+    {
+      "id": 2,
+      "name": "Oumaima",
+      "last_name": "Mahmoudi",
+      "gouvernorate": "Tunis"
+    },
+    {
+      "id": 3,
+      "name": "Mourad",
+      "last_name": "Ben Saleh",
+      "gouvernorate": "Sousse"
+    },
+    {
+      "id": 4,
+      "name": "Azer",
+      "last_name": "Hamdouni",
+      "gouvernorate": "Sidi Bouzid"
+    },
+    {
+      "id": 5,
+      "name": "Nasser",
+      "last_name": "Ajmi",
+      "gouvernorate": "Nabeul"
+    }
+  ]
+  }

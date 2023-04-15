@@ -1,0 +1,18 @@
+<div class="box">
+    <h1>Ajouter un rendez-vous : </h1>
+    <img src="../../assets/images/icons/pet.png" class="avatar">
+    <form #loginForm="ngForm" (ngSubmit)="submit(loginForm)" novalidate>
+      <div>
+        <label for="id_animal">Code d'animal :</label>
+        <input class="form-control" type="text" id="id_animal" name="id_animal" required ngModel>
+        <div *ngIf="loginForm.submitted && loginForm.controls['id_animal'].invalid" class="error-message">Code incorrect</div>
+      </div>
+      <div>
+        <input class="form-control" type="date" id="date" name="date" type="date" required ngModel>
+        <div *ngIf="loginForm.submitted && loginForm.controls['date'].invalid" class="error-message">Date incorrecte</div>
+      </div>
+      <br>
+      <button class="btn btn-primary" type="submit">Ajouter</button>
+    </form>
+  </div>
+  
