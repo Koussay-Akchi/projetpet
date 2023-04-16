@@ -1,11 +1,13 @@
 export const environment = {
-  firebase: {
-    projectId: 'projet-pet',
-    appId: '1:534837296167:web:4689f618601230d964e202',
-    storageBucket: 'projet-pet.appspot.com',
-    apiKey: 'AIzaSyDOA6p20739rR2F5gpC27Cq9WCd0v6rNPU',
-    authDomain: 'projet-pet.firebaseapp.com',
-    messagingSenderId: '534837296167',
-  },
-    production: true
+    production: true,
+    firebase : {
+        apiKey: "AIzaSyD51HPgarA8CkmKCHlo4NVXbNDE-TwPaTE",
+        authDomain: "banded-equator-381709.firebaseapp.com",
+        databaseURL: "https://banded-equator-381709-default-rtdb.europe-west1.firebasedatabase.app",
+        projectId: "banded-equator-381709",
+        storageBucket: "banded-equator-381709.appspot.com",
+        messagingSenderId: "748887344018",
+        appId: "1:748887344018:web:e779b0a1c764655fddf74b",
+        measurementId: "G-H6PGHKV065"
+      },
 };

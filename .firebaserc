@@ -1,13 +1,4 @@
 {
-  "targets": {
-    "projet-pet": {
-      "hosting": {
-        "projet-pet-2": [
-          "projet-pet"
-        ]
-      }
-    }
-  },
   "projects": {
     "default": "projet-pet"
   }

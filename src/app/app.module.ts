@@ -26,12 +26,12 @@ import { CarnetAnimalComponent } from './carnet-animal/carnet-animal.component';
 import { ConsulterVeterinaireComponent } from './consulter-veterinaire/consulter-veterinaire.component';
 import { EvaluerVeterinaireComponent } from './evaluer-veterinaire/evaluer-veterinaire.component';
 import { AjouterRdvComponent } from './ajouter-rdv/ajouter-rdv.component';
-import { environment } from './../environments/environment';
-import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
 import { environment } from '../environments/environment';
+
 import { provideAuth,getAuth } from '@angular/fire/auth';
 import { provideDatabase,getDatabase } from '@angular/fire/database';
 import { provideFirestore,getFirestore } from '@angular/fire/firestore';
+import { provideFirebaseApp, getApp, initializeApp } from '@angular/fire/app';
 
 @NgModule({
   declarations: [
