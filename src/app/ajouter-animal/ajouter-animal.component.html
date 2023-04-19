@@ -14,13 +14,13 @@
       </div>
       <div>
         <label for="weight">Poids :</label>
-        <input class="form-control" type="number" id="weight" name="weight" required step="0.01" ngModel>
+        <input class="form-control" type="number" id="weight" name="weight" required step="0.1" ngModel>
         <div *ngIf="loginForm.submitted && loginForm.controls['weight'].invalid" class="error-message">Poids incorrect</div>
       </div>
       <div>
         <label for="fur_length">Longueur de fourrure :</label>
         <select class="form-control" id="fur_length" name="fur_length" required ngModel>
-          <option value="Short" selected>Courts</option>
+          <option value="Short">Courts</option>
           <option value="Medium">Moyens</option>
           <option value="Long">Longs</option>
         </select>

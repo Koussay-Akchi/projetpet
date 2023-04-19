@@ -4,31 +4,36 @@
       "id": 1,
       "name": "Ahmed",
       "last_name": "Trabelsi",
-      "gouvernorate": "Ariana"
+      "gouvernorate": "Ariana",
+      "sex": "M"
     },
     {
       "id": 2,
       "name": "Oumaima",
       "last_name": "Mahmoudi",
-      "gouvernorate": "Tunis"
+      "gouvernorate": "Tunis",
+      "sex": "F"
     },
     {
       "id": 3,
       "name": "Mourad",
       "last_name": "Ben Saleh",
-      "gouvernorate": "Sousse"
+      "gouvernorate": "Sousse",
+      "sex": "M"
     },
     {
       "id": 4,
       "name": "Azer",
       "last_name": "Hamdouni",
-      "gouvernorate": "Sidi Bouzid"
+      "gouvernorate": "Sidi Bouzid",
+      "sex": "M"
     },
     {
       "id": 5,
-      "name": "Nasser",
+      "name": "Zayneb",
       "last_name": "Ajmi",
-      "gouvernorate": "Nabeul"
+      "gouvernorate": "Nabeul",
+      "sex": "F"
     }
   ]
-  }
+}

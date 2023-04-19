@@ -15,6 +15,7 @@ import { RdvComponent } from './rdv/rdv.component';
 import { ProfilAnimalComponent } from './profil-animal/profil-animal.component';
 import { CarnetAnimalComponent } from './carnet-animal/carnet-animal.component';
 import { AjouterRdvComponent } from './ajouter-rdv/ajouter-rdv.component';
+import { EvaluerVeterinaireComponent } from './evaluer-veterinaire/evaluer-veterinaire.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -31,6 +32,7 @@ const routes: Routes = [
   { path: 'ajout_animal', component: AjouterAnimalComponent },
   { path: 'mes_rdv', component: RdvComponent },
   { path: 'ajout_rdv', component: AjouterRdvComponent },
+  { path: 'evaluer', component: EvaluerVeterinaireComponent },
   { path: 'magasin', component: MagasinComponent }
   
 ];
