@@ -14,6 +14,7 @@ export class RechercheComponent {
 
   recherche_veto() {
     this.recherche = true;
+    //filtrer json
     console.log(this.recherche);
   }
 

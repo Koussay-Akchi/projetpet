@@ -12,10 +12,12 @@ export class RdvComponent {
   m_date = false;
   modifier_date(){
     this.m_date=true;
+    
   }
 
   confirmer(){
     this.m_date=false;
+    //changer dans firebase
   }
 
 

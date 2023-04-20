@@ -9,7 +9,7 @@ import { Observable } from 'rxjs';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'projet-pet-2';
+  title = 'projet-pet';
   /*name = ''; 
   score = 0;
   firestore: Firestore = inject(Firestore);

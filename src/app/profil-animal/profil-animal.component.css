@@ -42,7 +42,6 @@
   margin: 0;
   top: 50%;
   left: 50%;
-  
   -ms-transform: translate(25%, 100%);
   transform: translate(20%, 100%);
 }
