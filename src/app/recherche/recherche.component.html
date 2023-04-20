@@ -46,7 +46,7 @@
 <div class="box  d-flex flex-wrap" *ngIf=recherche>
     
    <div class="card" *ngFor="let veto of vetos">
-    <a routerLink="/cabinet"><img class="card-img-top" [src]="veto.sex === 'M' ? '../../assets/images/vetom.jpeg' : '../../assets/images/veto.jpg'" alt="{{ veto.name }}"></a>
+    <a routerLink="/evaluer"><img class="card-img-top" [src]="veto.sex === 'M' ? '../../assets/images/vetom.jpeg' : '../../assets/images/veto.jpg'" alt="{{ veto.name }}"></a>
       <div class="card-body">
         <h5 class="card-title">Dr. {{ veto.name }} {{ veto.last_name }}</h5>
         <p class="card-text">{{ veto.gouvernorate }} </p>
