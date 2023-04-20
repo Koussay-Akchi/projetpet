@@ -1,6 +1,6 @@
 # projetpet
 ## mini-Projet web 2023 :
-## 👉[Lien du site](https://projet-pet.web.app/)
+## 👉[Demo live du site](https://projet-pet.web.app/)
 [Project Board](https://trello.com/b/r48GMpJm/projet-veto)
 ![](https://i.imgur.com/MP0dCIF.png)
 <br>
