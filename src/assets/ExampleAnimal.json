@@ -59,7 +59,7 @@
       "name": "Nemo",
       "age": 1,
       "sex": "Male",
-      "type": "Cat",
+      "type": "Dog",
       "weight": 2.8,
       "fur_length": "Short"
     },
@@ -68,7 +68,7 @@
       "name": "Nibbles",
       "age": 3,
       "sex": "Female",
-      "type": "Dog",
+      "type": "Cat",
       "weight": 15.6,
       "fur_length": "Long"
     },
