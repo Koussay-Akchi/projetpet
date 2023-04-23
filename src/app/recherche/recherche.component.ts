@@ -13,9 +13,18 @@ export class RechercheComponent {
   recherche = false;
 
   recherche_veto() {
+    var name = (document.getElementById('name') as HTMLInputElement).value;
+    var lastName = (document.getElementById('last_name') as HTMLInputElement).value;
+    var gouvernorat = (document.getElementById('gouvernorat') as HTMLInputElement).value;
+    
     this.recherche = true;
-    //filtrer json
-    console.log(this.recherche);
+    var filteredVetos = this.v.veto.filter((veto: { name: string, last_name: string, gouvernorate: string }) => 
+    veto.name.toLowerCase().includes(name.toLowerCase()) &&
+    veto.last_name.toLowerCase().includes(lastName.toLowerCase()) &&
+    veto.gouvernorate.toLowerCase().includes(gouvernorat));
+    this.vetos = filteredVetos;
+
+    //console.log(this.recherche);
   }
 
   ngOnInit() {
