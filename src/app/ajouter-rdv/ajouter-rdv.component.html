@@ -11,6 +11,10 @@
         <input class="form-control" type="date" id="date" name="date" type="date" required ngModel>
         <div *ngIf="loginForm.submitted && loginForm.controls['date'].invalid" class="error-message">Date incorrecte</div>
       </div>
+      <div>
+        <label for="description">Description :</label>
+        <input class="form-control" type="text" id="description" name="description" placeholder="Optionnelle"ngModel>
+      </div>
       <br>
       <button class="btn btn-primary" type="submit">Ajouter</button>
     </form>
