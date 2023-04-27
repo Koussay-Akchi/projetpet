@@ -1,3 +1,26 @@
+<div class="box">
+  <div  *ngIf=!fil>
+  <button class="btn btn-primary" (click)="filtrer()">Filtrer <br> <img src="../../assets/images/icons/filter.png" height="15px" width="15px"></button>
+  <br><br><br>
+</div>
+  <div *ngIf=fil>
+  <h1>Rechercher vos rendez-vous : </h1>
+  <form #loginForm="ngForm" (ngSubmit)="recherche_rdv()" novalidate>
+  <div>
+    <input class="form-control" type="text" id="name" name="name" placeholder="Nom animal" ngModel>
+  </div>
+  <div>
+    <input class="form-control" type="number" id="code" name="code" placeholder="Code animal" ngModel>
+  </div>
+  <div>
+    <input class="form-control" type="text" id="description" name="description" placeholder="description" ngModel>
+  </div>
+
+  <br>
+  <button class="btn btn-primary" type="submit">Rechercher</button>
+</form>
+</div>
+
 <div class="mes-r d-flex flex-wrap">
     <div class="card" *ngFor="let r of rdv">
       <img src="../../assets/images/cabinet.jpg" height="100px">
@@ -11,7 +34,7 @@
           </div>
           <button class="btn btn-primary" (click)="confirmer()">Confirmer</button>
         </form>
-        <p class="card-text nom-animal"><a routerLink="/carnet">{{ r.animalName }}</a></p>
+        <p class="card-text nom-animal">{{ r.animalName }}<a routerLink="/carnet">({{ r.id }})</a></p>
         &nbsp;
         <p class="card-text">chez</p>
         &nbsp;
@@ -23,4 +46,4 @@
       </div>
     </div>
   </div>
-  
+</div>

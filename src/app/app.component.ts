@@ -1,8 +1,7 @@
 import { Component, OnInit, inject } from '@angular/core';
 import { Firestore, collectionData } from '@angular/fire/firestore';
-import { Observable } from 'rxjs';
-import { getFirestore , collection, doc, getDoc} from 'firebase/firestore';
-import { AngularFireModule } from "@angular/fire/compat";
+import { getFirestore ,  collection, doc, getDoc} from 'firebase/firestore';
+
 
 
 @Component({
@@ -12,8 +11,10 @@ import { AngularFireModule } from "@angular/fire/compat";
 })
 export class AppComponent {
   title = 'projet-pet';
-  db = getFirestore()
-  colRef = collection(this.db,"user")
+
+
+  db = getFirestore();
+  colRef = collection(this.db,"user");
   docRef = doc(this.colRef, '0QDtFXLLZHxefQWk213w');
   
 
@@ -21,10 +22,18 @@ export class AppComponent {
   
   
   async ngOnInit(): Promise<void>{
-    var docSnap = await getDoc(this.docRef);
-    const data=docSnap
-    console.log("test")
-    console.log(data)
-  }
+   /* var docSnap = await getDoc(this.docRef);
+      console.log(docSnap.exists)
+      this.documentData =  doc(this.db, 'user', '0QDtFXLLZHxefQWk213w');
+    console.log(this.documentData);
 
+*/
+const docSnap = await getDoc(this.docRef);
+if (docSnap.exists()) {
+  console.log(docSnap.data()['name']);
+} else {
+  console.log("No such document!");
+}
+
+}
 }

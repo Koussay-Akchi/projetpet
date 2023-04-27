@@ -34,6 +34,7 @@ import { provideFirestore, getFirestore } from '@angular/fire/firestore';
 import { provideFirebaseApp, getApp, initializeApp } from '@angular/fire/app';
 
 import { AngularFireModule } from "@angular/fire/compat";
+import { RdvUserComponent } from './rdv-user/rdv-user.component';
 
 @NgModule({
   declarations: [
@@ -58,7 +59,8 @@ import { AngularFireModule } from "@angular/fire/compat";
     CarnetAnimalComponent,
     ConsulterVeterinaireComponent,
     EvaluerVeterinaireComponent,
-    AjouterRdvComponent
+    AjouterRdvComponent,
+    RdvUserComponent
   ],
   imports: [
     BrowserModule,
