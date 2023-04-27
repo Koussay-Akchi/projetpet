@@ -4,6 +4,7 @@ form {
     flex-direction: column;
     align-items: center;
     font-family: Arial, sans-serif;
+    margin-bottom: 50px;
   }
   
   label {

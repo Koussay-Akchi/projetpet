@@ -11,11 +11,11 @@ import { LoginUserComponent } from './login-user/login-user.component';
 import { ProfilUserComponent } from './profil-user/profil-user.component';
 import { AjouterAnimalComponent } from './ajouter-animal/ajouter-animal.component';
 import { ProfilVetoComponent } from './profil-veto/profil-veto.component';
-import { RdvComponent } from './rdv/rdv.component';
 import { ProfilAnimalComponent } from './profil-animal/profil-animal.component';
 import { CarnetAnimalComponent } from './carnet-animal/carnet-animal.component';
 import { AjouterRdvComponent } from './ajouter-rdv/ajouter-rdv.component';
 import { EvaluerVeterinaireComponent } from './evaluer-veterinaire/evaluer-veterinaire.component';
+import { RdvUserComponent } from './rdv-user/rdv-user.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -30,7 +30,7 @@ const routes: Routes = [
   { path: 'animal', component: ProfilAnimalComponent },
   { path: 'carnet', component: CarnetAnimalComponent },
   { path: 'ajout_animal', component: AjouterAnimalComponent },
-  { path: 'mes_rdv', component: RdvComponent },
+  { path: 'mes_rdv', component: RdvUserComponent },
   { path: 'ajout_rdv', component: AjouterRdvComponent },
   { path: 'evaluer', component: EvaluerVeterinaireComponent },
   { path: 'magasin', component: MagasinComponent }

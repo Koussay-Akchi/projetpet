@@ -2,6 +2,11 @@ import { NgModule, isDevMode } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 
+import { provideAuth,getAuth } from '@angular/fire/auth';
+import { provideDatabase,getDatabase } from '@angular/fire/database';
+import { provideFirestore, getFirestore } from '@angular/fire/firestore';
+import { provideFirebaseApp, getApp, initializeApp } from '@angular/fire/app';
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
@@ -27,13 +32,6 @@ import { ConsulterVeterinaireComponent } from './consulter-veterinaire/consulter
 import { EvaluerVeterinaireComponent } from './evaluer-veterinaire/evaluer-veterinaire.component';
 import { AjouterRdvComponent } from './ajouter-rdv/ajouter-rdv.component';
 import { environment } from '../environments/environment';
-
-import { provideAuth,getAuth } from '@angular/fire/auth';
-import { provideDatabase,getDatabase } from '@angular/fire/database';
-import { provideFirestore, getFirestore } from '@angular/fire/firestore';
-import { provideFirebaseApp, getApp, initializeApp } from '@angular/fire/app';
-
-import { AngularFireModule } from "@angular/fire/compat";
 import { RdvUserComponent } from './rdv-user/rdv-user.component';
 
 @NgModule({

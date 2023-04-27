@@ -35,10 +35,7 @@
           <button class="btn btn-primary" (click)="confirmer()">Confirmer</button>
         </form>
         <p class="card-text nom-animal">{{ r.animalName }}<a routerLink="/carnet">({{ r.id }})</a></p>
-        &nbsp;
-        <p class="card-text">chez</p>
-        &nbsp;
-        <p class="card-text nom-veto"><a routerLink="/evaluer">{{ r.vetoName }}</a></p>
+        
         <br>
         <div class="box">
         <p class="card-text nom-veto">{{ r.description }}</p>
