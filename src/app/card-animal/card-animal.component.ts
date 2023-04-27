@@ -10,6 +10,9 @@ import * as data from '../../assets/ExampleAnimal.json';
 export class CardAnimalComponent implements OnInit {
   an : any;
   animals: any;
+  code() {
+    alert("le code est : 742");
+  }
 
   ngOnInit() {
     this.an = data;

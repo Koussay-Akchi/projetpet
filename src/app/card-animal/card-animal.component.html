@@ -4,6 +4,7 @@
       <div class="card-body">
         <h5 class="card-title">{{ animal.name }}</h5>
         <p class="card-text">{{ animal.type === 'Dog' ? 'Chien' : 'Chat' }} - {{ animal.sex === 'Male' ? 'Male' : 'Femelle' }} - {{ animal.age }} {{ animal.age === 1 ? 'an' : 'ans' }}</p>
+        <button class="btn btn-primary" (click)="code()">Code</button>
       </div>
     </div>
     
