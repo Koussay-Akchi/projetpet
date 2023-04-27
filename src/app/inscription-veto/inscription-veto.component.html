@@ -42,12 +42,18 @@
       </select>
       <div *ngIf="loginForm.submitted && loginForm.controls['gouvernorat'].invalid" class="error-message">Selectionnez un gouvernorat</div>
       </div>
-      
+      <div>
+        <label for="address">Addresse :</label>
+        <input class="form-control" type="text" id="address" name="address" required ngModel>
+        <div *ngIf="loginForm.submitted && loginForm.controls['address'].invalid" class="error-message">Addresse incorrecte</div>
+      </div>
+
       <div>
       <label for="email">Email :</label>
       <input class="form-control" type="email" id="email" name="email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" ngModel>
       <div *ngIf="loginForm.submitted && loginForm.controls['email'].invalid" class="error-message">Email incorrect</div>
     </div>
+
     <div>
       <label for="password">Mot de passe :</label>
       <input class="form-control" type="password" id="password" name="password" required ngModel>
