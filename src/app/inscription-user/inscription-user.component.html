@@ -1,5 +1,5 @@
 <div class="box">
-  <h1>Inscription Utilisateur : </h1>
+  <h1>Inscription Utilisateur</h1>
   <img src="../../assets/images/icons/user.png" class="avatar">
   <form #loginForm="ngForm" (ngSubmit)="submit(loginForm)" novalidate>
     <div>
@@ -21,11 +21,6 @@
       <label for="password">Mot de passe :</label>
       <input class="form-control" type="password" id="password" name="password" required ngModel>
       <div *ngIf="loginForm.submitted && loginForm.controls['password'].invalid" class="error-message">Mot de passe incorrect</div>
-    </div>
-    <div>
-      <label for="telephone">Telephone:</label>
-      <input class="form-control" type="tel" id="telephone" name="telephone" required pattern="\d{8}" ngModel>
-      <div *ngIf="loginForm.submitted && loginForm.controls['telephone'].invalid" class="error-message">Telephone incorrect</div>
     </div>
     <div>
       <label for="gouvernorat">gouvernorat:</label>
@@ -57,6 +52,12 @@
       </select>
       <div *ngIf="loginForm.submitted && loginForm.controls['gouvernorat'].invalid" class="error-message">Selectionnez un gouvernorat</div>
       </div>
+    <div>
+      <label for="telephone">Telephone:</label>
+      <input class="form-control" type="tel" id="telephone" name="telephone" required pattern="\d{8}" ngModel>
+      <div *ngIf="loginForm.submitted && loginForm.controls['telephone'].invalid" class="error-message">Telephone incorrect</div>
+    </div>
+
     <div>
       <label for="sex">Sexe :</label>
       <select class="form-control" id="sex" name="sex" required ngModel>
