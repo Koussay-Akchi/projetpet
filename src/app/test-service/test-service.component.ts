@@ -3,11 +3,11 @@ import { HttpClient } from '@angular/common/http';
 import { DataService } from '../data.service';
 
 @Component({
-  selector: 'app-profil-animal',
-  templateUrl: './profil-animal.component.html',
-  styleUrls: ['./profil-animal.component.css']
+  selector: 'app-test-service',
+  templateUrl: './test-service.component.html',
+  styleUrls: ['./test-service.component.css']
 })
-export class ProfilAnimalComponent {
+export class TestServiceComponent {
 
   animal: any;
 
@@ -26,16 +26,6 @@ export class ProfilAnimalComponent {
         console.log(this.animal)
       });
       
-  }
-
-  set_id_animal(id: number) {
-    this.dataService.set_id_animal(id);
-  }
-
-
-  submit(login: any){
-    console.log("formulaire envoye",login)
-    //console.log(login.form.controls)
   }
 
 }

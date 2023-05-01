@@ -2,9 +2,9 @@
     <div class="profile-card">
     <div class="wrapper">
     <div class="left">
-        <img src="../../assets/images/dog.jpg" alt="user" width="100">
-        <h4>Rex</h4>
-        <p style="font-weight: bold;">Code : 419</p>
+        <img [src]="animal.type === 'Dog' ? '../../assets/images/dog.jpg' : '../../assets/images/cat.jpg'" alt="{{ animal.name }}" alt="user" width="100">
+        <h4>{{ animal.name }}</h4>
+        <p style="font-weight: bold;">Code : {{ animal.id }}</p>
         <a routerLink="/profil"><button class="btn btn-primary">Foulen</button></a>
     </div>
     <div class="right">
@@ -15,15 +15,15 @@
           <form #loginForm="ngForm" (ngSubmit)="submit(loginForm)" novalidate>
             <div>
               <label for="name">nom :</label>
-              <input class="form-control" placeholder="Rex" type="text" id="name" name="name" required ngModel>
+              <input class="form-control" [placeholder]=animal.name type="text" id="name" name="name" required ngModel>
             </div>    
               <div>
               <label for="age">Age :</label>
-              <input class="form-control" placeholder="2 ans" type="number" id="age" name="age" min="1" max="25" required ngModel>
+              <input class="form-control" [placeholder]=animal.age type="number" id="age" name="age" min="1" max="25" required ngModel>
             </div>
             <div>
               <label for="weight">Poids :</label>
-              <input class="form-control" placeholder="4.3" type="number" id="weight" name="weight" required step="0.01" ngModel>
+              <input class="form-control" [placeholder]=animal.weight type="number" id="weight" name="weight" required step="0.01" ngModel>
             </div>
             <div>
               <label for="fur_length">Longueur de fourrure :</label>
@@ -52,7 +52,7 @@
             <br>
             <button class="btn btn-primary" type="submit">Modifer</button>
             <br>
-            <a routerLink="/profil"><button class="btn btn-primary btn-danger">Supprimer profil</button></a>
+            <a routerLink="/profil"><button class="btn btn-primary btn-danger" (click)="set_id_animal(234)">Supprimer profil</button></a>
           </form>
         </div>
       </div>

@@ -34,6 +34,7 @@ import { EvaluerVeterinaireComponent } from './evaluer-veterinaire/evaluer-veter
 import { AjouterRdvComponent } from './ajouter-rdv/ajouter-rdv.component';
 import { environment } from '../environments/environment';
 import { RdvUserComponent } from './rdv-user/rdv-user.component';
+import { TestServiceComponent } from './test-service/test-service.component';
 
 @NgModule({
   declarations: [
@@ -59,7 +60,8 @@ import { RdvUserComponent } from './rdv-user/rdv-user.component';
     ConsulterVeterinaireComponent,
     EvaluerVeterinaireComponent,
     AjouterRdvComponent,
-    RdvUserComponent
+    RdvUserComponent,
+    TestServiceComponent
   ],
   imports: [
     BrowserModule,

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { DataService } from '../data.service';
 
 //import * as data from '../../assets/ExampleAnimal.json';
 
@@ -15,15 +16,28 @@ export class CardAnimalComponent implements OnInit {
     alert("le code est : 742");
   }
 
-    constructor(private http: HttpClient) { }
+  constructor(
+    private http: HttpClient,
+    private dataService: DataService
+  ) {}
 
-  ngOnInit() {
-    this.http.get<any[]>('http://localhost:3005/animals/')
-      .subscribe((data) => {
-        this.animals = data;
-        console.log(this.animals);
-      });
-  }
+    ngOnInit() {
+      var id_animal= this.dataService.id_animal;
+  
+      this.http.get<any[]>('http://localhost:3005/animals/')
+        .subscribe((data) => {
+          this.animals = data;
+          console.log(this.animals)
+        });
+        
+    }
+  
+    set_id_animal(id: number) {
+      this.dataService.set_id_animal(id);
+    }
+  
+
+
 /*
   ngOnInit() {
     this.an = data;
