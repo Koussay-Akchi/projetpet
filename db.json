@@ -1,68 +1,92 @@
 {
   "veto": [
     {
-      "id": 1,
-      "name": "Ahmed",
-      "last_name": "Trabelsi",
-      "gouvernorate": "Ariana",
-      "sex": "M",
-      "address": "12 Rue de la Liberté, Ariana"
+        "id": 1,
+        "name": "Ahmed",
+        "last_name": "Trabelsi",
+        "gouvernorate": "Ariana",
+        "sex": "M",
+        "address": "12 Rue de la Liberté, Ariana",
+        "phone_number": "98345678",
+        "email": "ahmed.trabelsi@example.com",
+        "score":4
     },
     {
-      "id": 2,
-      "name": "Oumaima",
-      "last_name": "Mahmoudi",
-      "gouvernorate": "Tunis",
-      "sex": "F",
-      "address": "32 Avenue Habib Bourguiba, Tunis"
+        "id": 2,
+        "name": "Oumaima",
+        "last_name": "Mahmoudi",
+        "gouvernorate": "Tunis",
+        "sex": "F",
+        "address": "32 Avenue Habib Bourguiba, Tunis",
+        "phone_number": "52789012",
+        "email": "oumaima.mahmoudi@example.com",
+        "score":2
     },
     {
-      "id": 3,
-      "name": "Mourad",
-      "last_name": "Ben Saleh",
-      "gouvernorate": "Sousse",
-      "sex": "M",
-      "address": "25 Rue de la République, Sousse"
+        "id": 3,
+        "name": "Mourad",
+        "last_name": "Ben Saleh",
+        "gouvernorate": "Sousse",
+        "sex": "M",
+        "address": "25 Rue de la République, Sousse",
+        "phone_number": "97345689",
+        "email": "mourad.bensaleh@example.com",
+        "score":4
     },
     {
-      "id": 4,
-      "name": "Azer",
-      "last_name": "Hamdouni",
-      "gouvernorate": "Sidi Bouzid",
-      "sex": "M",
-      "address": "7 Rue des Martyrs, Sidi Bouzid"
+        "id": 4,
+        "name": "Azer",
+        "last_name": "Hamdouni",
+        "gouvernorate": "Sidi Bouzid",
+        "sex": "M",
+        "address": "7 Rue des Martyrs, Sidi Bouzid",
+        "phone_number": "98345671",
+        "email": "azer.hamdouni@example.com",
+        "score":5
     },
     {
-      "id": 5,
-      "name": "Zayneb",
-      "last_name": "Ajmi",
-      "gouvernorate": "Nabeul",
-      "sex": "F",
-      "address": "10 Rue Ibn Khaldoun, Nabeul"
+        "id": 5,
+        "name": "Zayneb",
+        "last_name": "Ajmi",
+        "gouvernorate": "Nabeul",
+        "sex": "F",
+        "address": "10 Rue Ibn Khaldoun, Nabeul",
+        "phone_number": "52789034",
+        "email": "zayneb.ajmi@example.com",
+        "score":2
     },
     {
-      "id": 6,
-      "name": "Ali",
-      "last_name": "Ben Ali",
-      "gouvernorate": "Bizerte",
-      "sex": "M",
-      "address": "20 Avenue Habib Bourguiba, Bizerte"
+        "id": 6,
+        "name": "Ali",
+        "last_name": "Ben Ali",
+        "gouvernorate": "Bizerte",
+        "sex": "M",
+        "address": "20 Avenue Habib Bourguiba, Bizerte",
+        "phone_number": "97345690",
+        "email": "ali.benali@example.com",
+        "score":3
     },
     {
-      "id": 7,
-      "name": "Ines",
-      "last_name": "Saadi",
-      "gouvernorate": "Monastir",
-      "sex": "F",
-      "address": "5 Rue Mohamed V, Monastir"
+        "id": 7,
+        "name": "Ines",
+        "last_name": "Saadi",
+        "gouvernorate": "Monastir",
+        "sex": "F",
+        "address": "5 Rue Mohamed V, Monastir",
+        "phone_number": "98345672",
+        "email": "ines.saadi@example.com",
+        "score":4
     },
     {
-      "id": 8,
-      "name": "Khaled",
-      "last_name": "Ben Khalifa",
-      "gouvernorate": "Mahdia",
-      "sex": "M",
-      "address": "17 Rue Ibn Abi Dhiaf, Mahdia"
+        "id": 8,
+        "name": "Khaled",
+        "last_name": "Ben Khalifa",
+        "gouvernorate": "Mahdia",
+        "sex": "M",
+        "address": "17 Rue Ibn Abi Dhiaf, Mahdia",
+        "phone_number": "52789045",
+        "email": "khaled.benkhalifa@example.com",
+        "score":5
     },
     {
       "id": 9,
@@ -70,7 +94,10 @@
       "last_name": "Toumi",
       "gouvernorate": "Gabès",
       "sex": "F",
-      "address": "30 Rue du 7 Novembre, Gabès"
+      "address": "30 Rue du 7 Novembre, Gabès",
+      "phone_number": "98901645",
+      "email": "sara.toumi@example.com",
+      "score":1
     }
   ],
   "user": [

@@ -41,7 +41,7 @@ export class RdvUserComponent {
     var description = (document.getElementById('description') as HTMLInputElement).value;
     var veto_name = (document.getElementById('veto_name') as HTMLInputElement).value;
     
-    var filteredRdv = this.rendez_vous.rdv.filter((rdv: { animalName: string, id: number, description: string, vetoName: string }) => 
+    var filteredRdv = this.rendez_vous.filter((rdv: { animalName: string, id: number, description: string, vetoName: string }) => 
     rdv.animalName.toLowerCase().includes(name.toLowerCase()) &&
     rdv.id.toString().includes(code) &&
     rdv.vetoName.toLowerCase().includes(veto_name.toLowerCase()) &&
@@ -65,6 +65,7 @@ export class RdvUserComponent {
     this.http.get<any[]>('http://localhost:3005/rdv/')
       .subscribe((data) => {
         this.rdv = data;
+        this.rendez_vous=this.rdv;
         console.log(this.rdv)
       });
       

@@ -10,11 +10,15 @@ import { DataService } from '../data.service';
 export class EvaluerVeterinaireComponent {
 
   veto:any;
+Array: any;
 
   constructor(
     private http: HttpClient,
     private dataService: DataService
   ) {}
+
+  tab: any[] = [];
+  tab2: any[] = [];
 
 
   ngOnInit() {
@@ -24,6 +28,8 @@ export class EvaluerVeterinaireComponent {
     .subscribe((data) => {
       this.veto = data;
       console.log(this.veto)
+      this.tab = new Array(this.veto.score);
+      this.tab2 = new Array(5 - this.tab.length);
     });
   }
 
