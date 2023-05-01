@@ -28,14 +28,14 @@ export class AjouterAnimalComponent {
 
     this.http.post<any>('http://localhost:3005/animals', newAnimal).subscribe(
       response => {
-        console.log(response); // log the response from the server
+        console.log(response);
       }
     );
 
     }else{
       console.log("Formulaire incorrect")
     }
-    
+
     //console.log(login.form.controls)
   }
 
