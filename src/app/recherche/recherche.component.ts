@@ -26,7 +26,14 @@ export class RechercheComponent {
     var gouvernorat = (document.getElementById('gouvernorat') as HTMLInputElement).value;
     
     this.recherche = true;
-    var filteredVetos = this.v.veto.filter((veto: { name: string, last_name: string, gouvernorate: string }) => 
+    
+    /*this.http.get<any[]>(`http://localhost:3005/veto/?name=${name}&last_name=${lastName}&gouvernorate=${gouvernorat}`)
+    .subscribe((data) => {
+      this.vetos = data;
+      console.log(this.vetos)
+    });*/
+
+    var filteredVetos = this.v.filter((veto: { name: string, last_name: string, gouvernorate: string }) => 
     veto.name.toLowerCase().includes(name.toLowerCase()) &&
     veto.last_name.toLowerCase().includes(lastName.toLowerCase()) &&
     veto.gouvernorate.toLowerCase().includes(gouvernorat));
@@ -34,6 +41,7 @@ export class RechercheComponent {
 
     //console.log(this.recherche);
   }
+
 
   set_id_veto(id: number) {
     this.dataService.set_id_veto(id);
@@ -47,8 +55,12 @@ export class RechercheComponent {
     this.http.get<any[]>('http://localhost:3005/veto/')
       .subscribe((data) => {
         this.vetos = data;
+        this.v=this.vetos;
         console.log(this.vetos)
       });
+
+      this.v=this.vetos
+      
  
   }
 

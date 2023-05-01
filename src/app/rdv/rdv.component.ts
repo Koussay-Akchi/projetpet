@@ -39,7 +39,7 @@ export class RdvComponent {
     var code = (document.getElementById('code') as HTMLInputElement).value;
     var description = (document.getElementById('description') as HTMLInputElement).value;
     
-    var filteredRdv = this.rendez_vous.rdv.filter((rdv: { animalName: string, id: number, description: string }) => 
+    var filteredRdv = this.rendez_vous.filter((rdv: { animalName: string, id: number, description: string }) => 
     rdv.animalName.toLowerCase().includes(name.toLowerCase()) &&
     rdv.id.toString().includes(code) &&
     rdv.description.toLowerCase().includes(description));
@@ -66,6 +66,7 @@ export class RdvComponent {
     this.http.get<any[]>('http://localhost:3005/rdv/')
       .subscribe((data) => {
         this.rdv = data;
+        this.rendez_vous=this.rdv;
         console.log(this.rdv)
       });
       
