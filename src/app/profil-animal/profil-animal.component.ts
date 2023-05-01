@@ -28,10 +28,6 @@ export class ProfilAnimalComponent {
       
   }
 
-  set_id_animal(id: number) {
-    this.dataService.set_id_animal(id);
-  }
-
 
   submit(login: any){
     console.log("formulaire envoye",login)

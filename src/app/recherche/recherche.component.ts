@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
-import * as data from '../../assets/ExampleVeto.json';
+//import * as data from '../../assets/ExampleVeto.json';
+import { HttpClient } from '@angular/common/http';
+import { DataService } from '../data.service';
 
 @Component({
   selector: 'app-recherche',
@@ -7,6 +9,12 @@ import * as data from '../../assets/ExampleVeto.json';
   styleUrls: ['./recherche.component.css']
 })
 export class RechercheComponent {
+
+
+  constructor(
+    private http: HttpClient,
+    private dataService: DataService
+  ) {}
 
   v : any;
   vetos: any;
@@ -27,11 +35,20 @@ export class RechercheComponent {
     //console.log(this.recherche);
   }
 
+  set_id_veto(id: number) {
+    this.dataService.set_id_veto(id);
+    console.log(id)
+  }
+
   ngOnInit() {
-    this.v = data;
-    this.vetos=this.v.default.veto;
-    console.log(this.recherche);
-    console.log(data);
+
+    var id_veto= this.dataService.id_veto;
+  
+    this.http.get<any[]>('http://localhost:3005/veto/')
+      .subscribe((data) => {
+        this.vetos = data;
+        console.log(this.vetos)
+      });
  
   }
 

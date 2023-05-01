@@ -2,10 +2,10 @@
         <div class="profile-card">
         <div class="wrapper">
         <div class="left">
-            <img src="../../assets/images/veto.jpg" alt="user" width="100">
-            <h4>Dr. Foulen</h4>
-            <p>Sousse</p>
-            <p>25 Rue de la République, Sousse</p>
+          <img class="card-img-top" [src]="veto.sex === 'M' ? '../../assets/images/vetom.jpeg' : '../../assets/images/veto.jpg'" alt="{{ veto.name }}">
+            <h4>Dr. {{ veto.name }} {{ veto.last_name }}</h4>
+            <p>{{ veto.gouvernorate }}</p>
+            <p>{{ veto.address }}</p>
         </div>
         <div class="right">
             <div class="info">
