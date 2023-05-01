@@ -17,6 +17,15 @@ export class ProfilAnimalComponent {
   ) {}
 
 
+  supprimer(){
+    var id_animal= this.dataService.id_animal;
+    this.http.delete(`http://localhost:3005/animals/${id_animal}`).subscribe(
+  (response) => {
+    console.log("Animal supprime");
+  }
+);
+  }
+
   ngOnInit() {
     var id_animal= this.dataService.id_animal;
 

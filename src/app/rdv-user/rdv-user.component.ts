@@ -1,5 +1,8 @@
 import { Component } from '@angular/core';
-import * as data from '../../assets/ExampleRdv.json';
+
+import { HttpClient } from '@angular/common/http';
+import { DataService } from '../data.service';
+//import * as data from '../../assets/ExampleRdv.json';
 
 @Component({
   selector: 'app-rdv-user',
@@ -7,6 +10,12 @@ import * as data from '../../assets/ExampleRdv.json';
   styleUrls: ['./rdv-user.component.css']
 })
 export class RdvUserComponent {
+
+  constructor(
+    private http: HttpClient,
+    private dataService: DataService
+  ) {}
+
 
   rdv : any;
   fil = false;
@@ -42,13 +51,24 @@ export class RdvUserComponent {
     //console.log(this.recherche);
   }
 
+  set_id_animal(id: number) {
+    this.dataService.set_id_animal(id);
+  }
+
+  set_id_veto(id: number) {
+    this.dataService.set_id_veto(id);
+  }
+
 
   ngOnInit() {
-    this.rendez_vous = data;
-    this.rdv=this.rendez_vous.default.rdv;
 
-    console.log(this.rdv);
- 
+    this.http.get<any[]>('http://localhost:3005/rdv/')
+      .subscribe((data) => {
+        this.rdv = data;
+        console.log(this.rdv)
+      });
+      
   }
+
 }
 

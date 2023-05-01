@@ -2,65 +2,69 @@
     <div class="profile-card">
     <div class="wrapper">
     <div class="left">
-        <img src="../../assets/images/dog.jpg" alt="user" width="100">
-        <h4>Rex</h4>
+        <img [src]="animal.type === 'Dog' ? '../../assets/images/dog.jpg' : '../../assets/images/cat.jpg'" alt="user" width="100">
+        <h4>{{ animal.name }}</h4>
         <a routerLink="/profil"><button class="btn btn-primary">Foulen</button></a>
+    </div>
+      <div class="right">
+        <div class="info">
+        <div class="box">
+        <h1>Carnet : </h1>
+        <img src="../../assets/images/icons/pet.png" class="avatar">
+        <form #loginForm="ngForm" (ngSubmit)="submit(loginForm)" novalidate>
+          <div>
+            <label for="R">R :</label>
+            <select class="form-control" id="R" name="R"  ngModel>
+              <option value="Vaccine" selected>Vaccine</option>
+              <option value="Non Vaccine">Non Vaccine</option>
+            </select>
+          </div>
+          <br>
+          <div>
+            <label for="C">C :</label>
+            <select class="form-control" id="C" name="C"  ngModel>
+              <option value="Vaccine" selected>Vaccine</option>
+              <option value="Non Vaccine">Non Vaccine</option>
+            </select>
+          </div>
+          <br>
+          <div>
+            <label for="P">P :</label>
+            <select class="form-control" id="P" name="P"  ngModel>
+              <option value="Vaccine" selected>Vaccine</option>
+              <option value="Non Vaccine">Non Vaccine</option>
+            </select>
+          </div>
+          <br>
+          <div>
+            <label for="Ch">Ch :</label>
+            <select class="form-control" id="Ch" name="Ch"  ngModel>
+              <option value="Vaccine" selected>Vaccine</option>
+              <option value="Non Vaccine">Non Vaccine</option>
+            </select>
+          </div>
+          <br>
+          <div>
+            <label for="FeLV">FeLV :</label>
+            <select class="form-control" id="FeLV" name="FeLV"  ngModel>
+              <option value="Vaccine" selected>Vaccine</option>
+              <option value="Non Vaccine">Non Vaccine</option>
+            </select>
+          </div>
+          <br>
+          <div>
+            <label for="Rage">Rage :</label>
+            <select class="form-control" id="Rage" name="Rage"  ngModel>
+              <option value="Vaccine" selected>Vaccine</option>
+              <option value="Non Vaccine">Non Vaccine</option>
+            </select>
+          </div>
+          <br>
+          <button class="btn btn-primary" type="submit">Modifer (non encore implementee)</button>
+        </form>
+      </div>
+    </div>
     </div>
 </div>
 </div>
-<div class="box">
-    <h1>Carnet : </h1>
-    <img src="../../assets/images/icons/pet.png" class="avatar">
-    <form #loginForm="ngForm" (ngSubmit)="submit(loginForm)" novalidate>
-      <div>
-        <label for="R">R :</label>
-        <select class="form-control" id="R" name="R"  ngModel>
-          <option value="Vaccine" selected>Vaccine</option>
-          <option value="Non Vaccine">Non Vaccine</option>
-        </select>
-      </div>
-      <br>
-      <div>
-        <label for="C">C :</label>
-        <select class="form-control" id="C" name="C"  ngModel>
-          <option value="Vaccine" selected>Vaccine</option>
-          <option value="Non Vaccine">Non Vaccine</option>
-        </select>
-      </div>
-      <br>
-      <div>
-        <label for="P">P :</label>
-        <select class="form-control" id="P" name="P"  ngModel>
-          <option value="Vaccine" selected>Vaccine</option>
-          <option value="Non Vaccine">Non Vaccine</option>
-        </select>
-      </div>
-      <br>
-      <div>
-        <label for="Ch">Ch :</label>
-        <select class="form-control" id="Ch" name="Ch"  ngModel>
-          <option value="Vaccine" selected>Vaccine</option>
-          <option value="Non Vaccine">Non Vaccine</option>
-        </select>
-      </div>
-      <br>
-      <div>
-        <label for="FeLV">FeLV :</label>
-        <select class="form-control" id="FeLV" name="FeLV"  ngModel>
-          <option value="Vaccine" selected>Vaccine</option>
-          <option value="Non Vaccine">Non Vaccine</option>
-        </select>
-      </div>
-      <br>
-      <div>
-        <label for="Rage">Rage :</label>
-        <select class="form-control" id="Rage" name="Rage"  ngModel>
-          <option value="Vaccine" selected>Vaccine</option>
-          <option value="Non Vaccine">Non Vaccine</option>
-        </select>
-      </div>
-      <br>
-      <button class="btn btn-primary" type="submit">Modifer</button>
-    </form>
-  </div>
 </div>

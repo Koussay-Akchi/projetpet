@@ -32,11 +32,11 @@
         <div class="card-body">
           <h5 class="card-title">Le {{ r.date }}
           </h5>
-          <p class="card-text nom-animal">{{ r.animalName }}<a routerLink="/animal">({{ r.id }})</a></p>
+          <p class="card-text nom-animal">{{ r.animalName }}  <a routerLink="/carnet"><button class="btn btn-primary" (click)="set_id_animal(r.id)">({{ r.id }})</button></a></p>
           &nbsp;
           <p class="card-text">chez</p>
           &nbsp;
-          <p class="card-text nom-veto"><a routerLink="/evaluer">{{ r.vetoName }}</a></p>
+          <p class="card-text nom-veto"><a routerLink="/evaluer"><button class="btn btn-primary" (click)="set_id_veto(r.id_veto)">Dr. {{ r.vetoName }}</button></a></p>
           <br>
           <div class="box">
           <p class="card-text nom-veto">{{ r.description }}</p>

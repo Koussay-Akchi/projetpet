@@ -26,7 +26,7 @@
       <img src="../../assets/images/cabinet.jpg" height="100px">
       <div class="card-body">
         <h5 class="card-title">Le {{ r.date }} <button class="btn btn-primary" (click)="modifier_date()">Modifier date</button>&nbsp;
-          <button class="btn btn-primary btn-danger">X</button>
+          <button class="btn btn-primary btn-danger" (click)="supprimer(r.id,r.id_veto,r.date)">X</button>
         </h5>
         <form *ngIf=m_date novalidate>
           <div>
@@ -34,7 +34,8 @@
           </div>
           <button class="btn btn-primary" (click)="confirmer()">Confirmer</button>
         </form>
-        <p class="card-text nom-animal">{{ r.animalName }}<a routerLink="/carnet">({{ r.id }})</a></p>
+        
+        <p class="card-text nom-animal">{{ r.animalName }}  <a routerLink="/carnet"><button class="btn btn-primary" (click)="set_id_animal(r.id)">({{ r.id }})</button></a></p>
         
         <br>
         <div class="box">

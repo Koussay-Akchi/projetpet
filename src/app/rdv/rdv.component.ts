@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
-import * as data from '../../assets/ExampleRdv.json';
+import { HttpClient } from '@angular/common/http';
+import { DataService } from '../data.service';
+//import * as data from '../../assets/ExampleRdv.json';
 
 @Component({
   selector: 'app-rdv',
@@ -7,6 +9,13 @@ import * as data from '../../assets/ExampleRdv.json';
   styleUrls: ['./rdv.component.css']
 })
 export class RdvComponent {
+  
+  constructor(
+    private http: HttpClient,
+    private dataService: DataService
+  ) {}
+
+  
   rdv : any;
   fil = false;
   rendez_vous:any;
@@ -39,12 +48,26 @@ export class RdvComponent {
     //console.log(this.recherche);
   }
 
+  supprimer(id :number, id_veto :number, date :string){
+    this.http.delete(`http://localhost:3005/rdv/${id}?id_veto=${id_veto}&date=${date}`).subscribe(
+  (response) => {
+    console.log("rdv supprime");
+    alert("Rendez-vous supprime")
+  }
+);
+}
+
+  set_id_animal(id: number) {
+    this.dataService.set_id_animal(id);
+  }
 
   ngOnInit() {
-    this.rendez_vous = data;
-    this.rdv=this.rendez_vous.default.rdv;
 
-    console.log(this.rdv);
- 
+    this.http.get<any[]>('http://localhost:3005/rdv/')
+      .subscribe((data) => {
+        this.rdv = data;
+        console.log(this.rdv)
+      });
+      
   }
 }
