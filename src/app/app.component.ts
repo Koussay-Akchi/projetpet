@@ -12,6 +12,12 @@ import { getFirestore ,  collection, doc, getDoc} from 'firebase/firestore';
 export class AppComponent {
   title = 'projet-pet';
 
+  id_animal = 234;
+
+
+  set_id_animal(id: number){
+    this.id_animal=id;
+  }
 
   db = getFirestore();
   colRef = collection(this.db,"user");
