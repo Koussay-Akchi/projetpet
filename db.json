@@ -98,28 +98,6 @@
       "phone_number": "98901645",
       "email": "sara.toumi@example.com",
       "score": 1
-    },
-    {
-      "name": "tetst1",
-      "last_name": "test1n",
-      "sex": "male",
-      "address": "tunis tunis",
-      "id": 10
-    },
-    {
-      "name": "tetst1",
-      "last_name": "test1n",
-      "sex": "male",
-      "address": "tunis tunis",
-      "id": 11
-    },
-    {
-      "name": "a",
-      "last_name": "b",
-      "sex": "male",
-      "address": "Hammam chatt",
-      "email": "oumaima.mahmoudi@example.com",
-      "id": 12
     }
   ],
   "user": [
@@ -297,7 +275,7 @@
       "fur_length": "Short"
     },
     {
-      "name": "bombino",
+      "name": "Bombino",
       "age": 4,
       "sex": "Male",
       "type": "Dog",
@@ -306,7 +284,7 @@
       "id": 892
     },
     {
-      "name": "mazen",
+      "name": "Mazen",
       "age": 20,
       "sex": "male",
       "type": "Dog",

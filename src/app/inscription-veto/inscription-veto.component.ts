@@ -19,6 +19,7 @@ export class InscriptionVetoComponent {
         (response) => {
           if (response.length > 0) {
             alert('Email deja utilise');
+            login.reset()
           } else {
             const newVeto = {
               name: login.value.name,
