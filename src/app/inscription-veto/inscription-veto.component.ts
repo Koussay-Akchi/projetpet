@@ -17,7 +17,7 @@ export class InscriptionVetoComponent {
 
       this.http.get<any>(`http://localhost:3005/veto/?email=${email}`).subscribe(
         (response) => {
-          if (response.exists) {
+          if (response.length > 0) {
             alert('Email deja utilise');
           } else {
             const newVeto = {
