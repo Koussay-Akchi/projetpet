@@ -32,13 +32,14 @@ export class RechercheComponent {
       this.vetos = data;
       console.log(this.vetos)
     });*/
+    
 
     var filteredVetos = this.v.filter((veto: { name: string, last_name: string, gouvernorate: string }) => 
     veto.name.toLowerCase().includes(name.toLowerCase()) &&
     veto.last_name.toLowerCase().includes(lastName.toLowerCase()) &&
-    veto.gouvernorate.toLowerCase().includes(gouvernorat));
+    veto.gouvernorate.toLowerCase().includes(gouvernorat.toLowerCase()));
     this.vetos = filteredVetos;
-
+    
     //console.log(this.recherche);
   }
 
@@ -58,8 +59,6 @@ export class RechercheComponent {
         this.v=this.vetos;
         console.log(this.vetos)
       });
-
-      this.v=this.vetos
       
  
   }

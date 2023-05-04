@@ -7,8 +7,13 @@ import { Component } from '@angular/core';
 })
 export class LoginUserComponent {
   submit(login: any){
+   if(!login.control.invalid){
     console.log("formulaire envoye",login)
+    alert("Connexion etablie!")
     //console.log(login.form.controls)
+
+   }
+
   }
 
 }

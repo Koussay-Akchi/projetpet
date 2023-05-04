@@ -9,32 +9,37 @@ import { HttpClient } from '@angular/common/http';
 export class InscriptionVetoComponent {
   constructor(private http: HttpClient) { }
 
-
   submit(login: any){
-    
     if (login.form.valid) {
-      console.log("Formulaire envoyé")
-  
-    const newVeto = {
-      name: login.value.name,
-      last_name: login.value.last_name,
-      gouvernorate: login.value.gouvernorate,
-      sex: login.value.sex,
-      address: login.value.address
-    };
-  
+      console.log("Formulaire envoyé");
 
-    this.http.post<any>('http://localhost:3005/veto', newVeto).subscribe(
-      response => {
-        console.log(response);
-      }
-    );
+      const email = login.value.email;
 
-    }else{
-      console.log("Formulaire incorrect")
+      this.http.get<any>(`http://localhost:3005/veto/?email=${email}`).subscribe(
+        (response) => {
+          if (response.exists) {
+            alert('Email deja utilise');
+          } else {
+            const newVeto = {
+              name: login.value.name,
+              last_name: login.value.last_name,
+              gouvernorate: login.value.gouvernorate,
+              sex: login.value.sex,
+              address: login.value.address,
+              email: login.value.email
+            };
+
+            this.http.post<any>('http://localhost:3005/veto', newVeto).subscribe(
+              response => {
+                console.log(response);
+              }
+            );
+            alert("Bienvenue!");
+          }
+        }
+      );
+    } else {
+      console.log("Formulaire incorrect");
     }
-
-    //console.log(login.form.controls)
   }
-
 }

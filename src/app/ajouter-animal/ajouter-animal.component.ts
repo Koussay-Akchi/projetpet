@@ -20,7 +20,7 @@ export class AjouterAnimalComponent {
       name: login.value.name,
       age: login.value.age,
       sex: login.value.sex,
-      type: login.value.type,
+      type: login.value.type_a,
       weight: login.value.weight,
       fur_length: login.value.fur_length
     };
@@ -31,6 +31,7 @@ export class AjouterAnimalComponent {
         console.log(response);
       }
     );
+    alert("Bienvenue petite creature")
 
     }else{
       console.log("Formulaire incorrect")

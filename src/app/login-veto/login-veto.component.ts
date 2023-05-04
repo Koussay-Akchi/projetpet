@@ -7,7 +7,12 @@ import { Component } from '@angular/core';
 })
 export class LoginVetoComponent {
   submit(login: any){
-    console.log("formulaire envoye",login)
-    //console.log(login.form.controls)
-  }
+    if(!login.control.invalid){
+     console.log("formulaire envoye",login)
+     alert("Connexion etablie!")
+     //console.log(login.form.controls)
+ 
+    }
+ 
+   }
 }
