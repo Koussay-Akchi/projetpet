@@ -1,8 +1,10 @@
-# projetpet
-## mini-Projet web 2023 :
+# projetpet - mini-Projet web 2023
+## Presentation video :
+
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/CuzWN8HN_So/0.jpg)](https://www.youtube.com/watch?v=CuzWN8HN_So)
 ## 👉[Demo live du site](https://projet-pet.web.app/)
 [Project Board](https://trello.com/b/r48GMpJm/projet-veto)
-![](https://i.imgur.com/MP0dCIF.png)
+![](https://i.imgur.com/m3ATMid.png)
 <br>
 Ce projet est une plateforme qui permet de connecter des propriétaires d'animaux et des vétérinaires. Il est réalisé en **Angular** et utilise **Firebase**. Les fonctionnalités du projet sont les suivantes :
 <br>
