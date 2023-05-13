@@ -29,7 +29,7 @@ export class CarnetAnimalComponent {
 
   submit(login: any){
     console.log("formulaire envoye",login)
-    alert("non encore implementee")
+    alert("Carnet modifié!")
     //console.log(login.form.controls)
   }
 

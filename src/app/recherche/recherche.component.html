@@ -51,6 +51,10 @@
       <div class="card-body">
         <h5 class="card-title">Dr. {{ veto.name }} {{ veto.last_name }}</h5>
         <p class="card-text">{{ veto.address }}</p>
+            <div class="box d-flex flex-wrap">
+                    <img *ngFor="let star of tableauStars(veto.score);" src="../../assets/images/star.png" height="25px" width="25px">
+                    <img *ngFor="let star of tableauStars(5-veto.score);" src="../../assets/images/star_perdu.png" height="25px" width="25px">
+            </div>
         <a routerLink="/evaluer"><button class="btn btn-primary" (click)="set_id_veto(veto.id)">Consulter</button></a>
       </div>
     </div>

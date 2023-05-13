@@ -27,6 +27,7 @@ export class InscriptionVetoComponent {
               gouvernorate: login.value.gouvernorate,
               sex: login.value.sex,
               address: login.value.address,
+              score: 3,
               email: login.value.email
             };
 

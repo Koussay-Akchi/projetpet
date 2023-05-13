@@ -9,6 +9,10 @@ import { DataService } from '../data.service';
   styleUrls: ['./recherche.component.css']
 })
 export class RechercheComponent {
+  tableauStars(score: number): number[] {
+    return Array(score).fill(0);
+  }
+  
 
 
   constructor(
@@ -43,6 +47,8 @@ export class RechercheComponent {
     //console.log(this.recherche);
   }
 
+  tab: any[] = [];
+  tab2: any[] = [];
 
   set_id_veto(id: number) {
     this.dataService.set_id_veto(id);

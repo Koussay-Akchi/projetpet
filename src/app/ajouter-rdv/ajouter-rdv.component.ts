@@ -33,7 +33,7 @@ export class AjouterRdvComponent {
     }, error => {
       console.log("Erreur lors de la récupération des informations de l'animal", error);
     });
-    alert("Be on please!")
+    alert("Rendez-vous ajouté!")
   }else{
       console.log("Formulaire incorrect")
 }

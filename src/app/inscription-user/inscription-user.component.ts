@@ -10,6 +10,7 @@ export class InscriptionUserComponent {
 
   submit(login: any){
     console.log("formulaire envoye",login)
+    alert("Félicitations ! Votre compte a été créé avec succès!")
     //console.log(login.form.controls)
   }
 
